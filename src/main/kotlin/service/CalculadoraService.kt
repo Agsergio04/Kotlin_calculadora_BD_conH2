@@ -5,12 +5,12 @@ import org.example.model.Operacion
 
 /**
  * Implementación del servicio de calculadora que actúa como capa intermedia entre la lógica de negocio
- * y la capa de acceso a datos ([CalculadoraDaoH2]).
+ * y la capa de acceso a datos ([ICalculadoraDao]).
  *
  * @property calculadora Instancia del DAO para acceder a las operaciones almacenadas.
  */
 class CalculadoraService(
-    private val calculadora: CalculadoraDaoH2,
+    private val calculadora: ICalculadoraDao,
 ) : ICalculadoraServ {
 
     /**
