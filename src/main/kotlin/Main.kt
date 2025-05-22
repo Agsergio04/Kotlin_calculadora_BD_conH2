@@ -1,16 +1,33 @@
 package org.example
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+import org.example.app.Controlador
+import org.example.data.RepoLogTxt
+import org.example.service.ServicioCalc
+import org.example.service.ServicioLog
+import org.example.ui.Consola
+import org.example.utils.GestorFichTxt
+
+/**
+ * Punto de entrada de la aplicación.
+ *
+ * Inicializa los componentes necesarios de la arquitectura (UI, repositorio, servicio, lógica de negocio)
+ * y delega el control al controlador principal de la aplicación.
+ */
+fun main(args: Array<String>) {
+    val repoLog = RepoLogTxt(GestorFichTxt())
+    Controlador(Consola(), ServicioCalc(), ServicioLog(repoLog)).iniciar(args)
+
+    /*
+    O también instanciando en variables locales... es lo mismo al fin y al cabo.
+
+    val consola = Consola()
+    val gestorFicheros = GestorFichText()
+    val repoLog = RepoLogTxt(gestorFicheros)
+    val servicioLog = ServicioLog(repoLog)
+    val calculadora = ServicioCalc()
+    val controlador = Controlador(consola, calculadora, servicioLog)
+
+    controlador.iniciar(args)
+     */
 }
