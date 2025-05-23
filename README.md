@@ -89,3 +89,21 @@ Aqui explico un poco a cerca de los principios solid que cumple este proyecto
 
 ## Funcionamiento del programa 
 
+Este es el punto de entrada al programa:  
+https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/bc37e450f7e154a3395ab9a6b3422da30a4754c9/src/main/kotlin/Main.kt#L29-L48  
+
+Tras la ejecucion del programa se le mostrara al usuario la ultima operacion realizada en la calculadora :  
+![inicio](https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/master/fotos/inicio.png)  
+
+Tras ellos se le mostrara al usuario un menu el cual posee estas opciones:
+-1 Realizar una operacion.
+-2 Mostrar todas las operaciones dadas de la calculadora.
+-3 Mostrar todas las operaciones hechas segun el tipo de operacion.
+-4 Salir
+![menu](https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/master/fotos/menu.png)  
+
+Aqui un ejemplo al realizar la segunda opcion de la calculadora :  
+![logs](https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/master/fotos/logs.png) 
+
+
+
