@@ -1,6 +1,6 @@
 package org.example.app
 
-import org.example.utils.RepoLogTxt
+import org.example.utils.IRepoLog
 import org.example.model.Operacion
 import org.example.model.Operador
 import org.example.service.ServicioCalc
@@ -18,7 +18,7 @@ import org.example.ui.IEntradaSalida
 class Controlador(
     private val ui: IEntradaSalida,
     private val calculadora: ServicioCalc,
-    private val repoLog : RepoLogTxt,
+    private val repoLog : IRepoLog ,
     private val calculadoraService: ICalculadoraServ
 ) {
 
