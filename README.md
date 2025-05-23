@@ -106,4 +106,13 @@ Aqui un ejemplo al realizar la segunda opcion de la calculadora :
 ![logs](https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/master/fotos/logs.png) 
 
 
+--- 
+
+## Base de datos 
+Tal y como comente en la brebe descripcion que he hecho a cerca del proyecto yo realizo la permanencia de datos por medio de una base de datos en H2,en la cual tengo creada una tabla con la fecha,los numeros,el operador y su resultado:  
+![base_datos](https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/master/fotos/base_datos.png)   
+
+Aqui el script en sql para crear la tabla:  
+https://github.com/Agsergio04/Kotlin_calculadora_BD_conH2/blob/1c511619903ed12cb3df048fb33fef0ca6aa85c8/data/crear_tablas_pedidosdb.sql#L1-L9
+
 
